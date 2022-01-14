@@ -31,3 +31,8 @@ variable "tags" {
   type        = map(string)
   default     = null
 }
+
+variable "disable_rollback" {
+  type = bool
+  default = true
+}

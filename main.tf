@@ -1,6 +1,7 @@
 resource "aws_cloudformation_stack" "dedicated_hosts" {
   name = var.cf_stack_name
   tags = var.tags
+  disable_rollback = var.disable_rollback
 
   template_body = <<STACK
 {
